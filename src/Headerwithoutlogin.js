@@ -11,7 +11,7 @@ const Headerwithoutlogin=({mode,nameuser,setshowpageonlogin,onClick})=>{
 	const [show,setshow] =useState(false);
  
 const reload =()=>{
-	Navigate("/home1")
+	Navigate("/")
 	window.location.reload();
 
 }
@@ -31,7 +31,7 @@ var name =nameuser.split(' ');
 					
 						<ul >
 
-				            <li  ><Link to="/Home1" onClick={reload} className={mode?"nav-link col2":"nav-link col1"}>Home</Link></li>
+				            <li  ><Link to="/" onClick={reload} className={mode?"nav-link col2":"nav-link col1"}>Home</Link></li>
 							<li   ><Link to="/about1" className={mode?"nav-link col2":"nav-link col1"} >About me</Link></li>
 							<li  ><Link to="/works1" className={mode?"nav-link col2":"nav-link col1"}>Works</Link></li>
 							<li  ><Link to="/contact1" className={mode?"nav-link col2":"nav-link col1"}>Contacts</Link></li>
@@ -57,7 +57,7 @@ var name =nameuser.split(' ');
 						
 							
 				 </div>
-				{ show ?<Seclinklogout1 name={name} mode={mode} />:null}
+				{ show ?<Seclinklogout1 onClick={onClick} name={name} mode={mode} />:null}
 	</div>
 </>
         )

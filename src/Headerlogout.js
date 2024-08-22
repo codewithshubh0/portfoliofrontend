@@ -61,7 +61,7 @@ var name =nameuser.split(' ');
 						
 							
 				 </div>
-				{ show ?<Seclinklogout name={name} mode={mode} setshowpageonlogin={setshowpageonlogin}/>:null}
+				{ show ?<Seclinklogout onClick={onClick} name={name} mode={mode} setshowpageonlogin={setshowpageonlogin}/>:null}
 	</div>
 </>
         )

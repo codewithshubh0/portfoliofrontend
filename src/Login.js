@@ -45,7 +45,7 @@ const [error, setError] = useState("");
 
 };
 const reload =()=>{
-  navigate("/home1")
+  navigate("/")
 	window.location.reload();
 
 
@@ -73,7 +73,7 @@ return (
           <button type="submit"  className={mode?"btn btn-light":"btn btn-dark"}>Login</button><br></br><br></br>
           <h6 className={mode?"text-light":"text-dark"}>Dont't have an account ? <Link to="/signup">Sign up</Link></h6>
           <h4>OR</h4>
-      <h6 className={mode?"text-light":"text-dark"}>Continue without Login ? <Link to="/home1" onClick={reload}>Continue</Link></h6>
+      <h6 className={mode?"text-light":"text-dark"}>Continue without Login ? <Link to="/" onClick={reload}>Continue</Link></h6>
         </form><br></br>
        
       </div>

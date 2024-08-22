@@ -167,7 +167,7 @@ function App() {
  return (
    <>
     <Routes>
-    <Route path="/"  element={ showpageonlogin && showpageonlogin._id ? <>
+    <Route path="/home1"  element={ showpageonlogin && showpageonlogin._id ? <>
             <ScrollToTop />
           
             <Headerlogout onClick={()=>setmode(!mode)} nameuser={showpageonlogin.name} setshowpageonlogin={setshowpageonlogin}  mode ={mode}/>
@@ -208,7 +208,7 @@ function App() {
 
 
       
-            <Route path="/home1"  element={ <>
+            <Route path="/"  element={ <>
             <ScrollToTop />
                       <Headerwithoutlogin onClick={()=>setmode(!mode)}   nameuser="User"  setshowpageonlogin={setshowpageonlogin} mode ={mode}/>
             <Cursor className="cur"/>
